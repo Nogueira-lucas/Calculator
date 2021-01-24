@@ -1,0 +1,51 @@
+.calculadora_container {
+    border: 1px solid;
+    padding: 15px 5px 5px 5px;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.display {
+    width: 70%;
+    height: 35px;
+    font-size: 30px;
+    font-family: verdana; 
+}
+
+.botoes-container {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.botoes-container button {
+    width: 85px;
+    height: 80px;
+    margin: 3px;
+    font-size: larger;
+}
+
+.botoes-container .igual {
+    width: 175px;
+    height: 80px;
+    margin: 3px;
+    font-size: larger;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
