@@ -1,9 +1,12 @@
 .calculadora_container {
-    border: 1px solid;
+    background: rgb(209,237,12);
+    background: linear-gradient(0deg, rgba(209,237,12,1) 0%, 
+        rgba(208,183,38,1) 35%, rgba(255,89,0,0.87718837535014) 100%);
     padding: 15px 5px 5px 5px;
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 .input_container {

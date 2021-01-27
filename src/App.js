@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="Header">
       <h1>Calculadora</h1>
-      <hr></hr>
+      <hr className="headerline"></hr>
     </div>
   );
 }

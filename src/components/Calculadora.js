@@ -8,11 +8,11 @@ function Display(props) {
 
     return (
         <div className="input_container">
-            <input type="number"
-                className="display"
+            <input type="number" type="text"
+                className="display form-control"
                 value={ result }>
             </input>
-            <button onClick={()=> clear()}>Clear</button>
+            <button className="btn btn-light" onClick={()=> clear()}>Clear</button>
         </div>
     );
 }
@@ -22,25 +22,25 @@ class Buttons extends React.Component {
     render() {
         return (
             <div className="botoes-container">
-                <button onClick={()=> this.props.addTempValue(1)}>1</button>
-                <button onClick={()=> this.props.addTempValue(2)}>2</button>
-                <button onClick={()=> this.props.addTempValue(3)}>3</button>
-                <button onClick={()=> this.props.addOperator(1)}>+</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(1)}>1</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(2)}>2</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(3)}>3</button>
+                <button className="btn btn-light" onClick={()=> this.props.addOperator(1)}>+</button>
                 <br></br>
-                <button onClick={()=> this.props.addTempValue(4)}>4</button>
-                <button onClick={()=> this.props.addTempValue(5)}>5</button>
-                <button onClick={()=> this.props.addTempValue(6)}>6</button>
-                <button onClick={()=> this.props.addOperator(2)}>-</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(4)}>4</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(5)}>5</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(6)}>6</button>
+                <button className="btn btn-light" onClick={()=> this.props.addOperator(2)}>-</button>
                 <br></br>
-                <button onClick={()=> this.props.addTempValue(7)}>7</button>
-                <button onClick={()=> this.props.addTempValue(8)}>8</button>
-                <button onClick={()=> this.props.addTempValue(9)}>9</button>
-                <button onClick={()=> this.props.addOperator(3)}>*</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(7)}>7</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(8)}>8</button>
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(9)}>9</button>
+                <button className="btn btn-light" onClick={()=> this.props.addOperator(3)}>*</button>
                 <br></br>
-                <button onClick={()=> this.props.addTempValue(0)}>0</button>
-                <button className="igual" 
+                <button className="btn btn-light" onClick={()=> this.props.addTempValue(0)}>0</button>
+                <button className="btn btn-light igual"
                     onClick={()=> this.props.calc()}>=</button>
-                <button onClick={()=> this.props.addOperator(4)}>/</button>
+                <button className="btn btn-light" onClick={()=> this.props.addOperator(4)}>/</button>
             </div>
         );
     }
@@ -102,7 +102,7 @@ class Calculadora extends React.Component {
                     <Display result={this.state.tempValue} clear={this.clear}></Display>
                 </div>
                 <div className="buttons">
-                    <Buttons 
+                    <Buttons className="btn btn-light"
                         addTempValue={this.addTempValue}
                         addOperator={this.addOperator}
                         calc={this.calc}>
